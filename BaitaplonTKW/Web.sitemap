@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="">
+  <siteMapNode>
+    <siteMapNode url="Trangchu.aspx" title="Trang chủ">
+    </siteMapNode>
+    <siteMapNode url="Gioithieu.aspx" title="Giới thiệu" >
+    </siteMapNode>
+    <siteMapNode url="Tintuc.aspx" title="Tin tức" >
+    </siteMapNode>
+    <siteMapNode url="sanpham.aspx" title="Sản phẩm">
+    </siteMapNode>
+    <siteMapNode url="huongdanmuahang.aspx" title="Hướng dẫn mua hàng">
+    </siteMapNode>
+    <siteMapNode url="lienhe.aspx" title="Liên hệ">
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

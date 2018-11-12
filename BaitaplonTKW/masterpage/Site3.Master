@@ -1,0 +1,158 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site3.master.cs" Inherits="BaitaplonTKW.masterpage.Site3" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+
+    <title></title>
+  
+    <style type="text/css">
+        *{
+    margin:0px;
+    }
+        #baoquanh {
+            margin: auto;
+            height: auto;
+            width: 1000px;
+           overflow:auto;
+        }
+        #baoquanh #header {
+    background-color: #ffd800;
+    height: auto;
+    width: 100%;
+        }
+      
+        #baoquanh #Menu1 {
+    background-color: #F2F2F2;
+    width:100%;
+            }
+    #baoquanh #left {
+    background-color: #ffffff;
+    float: left;
+    height: 500px;
+    width: auto;
+    margin-top: 10px;
+}
+#baoquanh #noidung {
+    background-color: #ffffff;
+    float: left;
+    width: 680px;
+    height:auto;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+            #baoquanh #left #Menu2 {
+                background-color: #ffd800;
+    height: 300px;
+    width: 250px;
+   
+            }
+#baoquanh #right {
+    background-color: #F2F2F2;
+    float: right;
+    width:50px;
+    height: auto;
+    margin-top: 10px;
+    margin-left:10px;
+}
+#baoquanh #footer {
+    float: left;
+    width: 100%;
+    height:100px;
+    margin-top: 10px;
+    background-color: #000000;
+}
+            #baoquanh #footer #fl{
+                float:left;
+                width:333px;
+                color:#ffffff;
+                height:100px;
+            }
+            #baoquanh #footer #fc{
+                float:left;
+                width:333px;
+                  color:#ffffff;
+                  height:100px;
+            }
+             #baoquanh #footer #fr{
+                float:right;
+                width:333px;
+                  color:#ffffff;
+                  height:100px;
+            }
+       #baoquanh #footer #fl #p { 
+           padding-top:20px;
+           padding-left:20px;
+        }
+       #baoquanh #footer #fc #p1 { 
+           padding-top:20px;
+           padding-left:20px;
+        }
+       #baoquanh #footer #fr #p2 { 
+           padding-top:20px;
+           padding-left:20px;
+        }
+          
+            #baoquanh #header #hl {
+          background-color: #ffd800;
+                float:left;
+                width:70%;
+              
+            }
+        .lb {
+            line-height:50px;
+        }
+    
+        .auto-style3 {
+            width: 691px;
+        }
+       
+       
+        </style>
+     <asp:SiteMapDataSource ID="SiteMap" runat="server" ShowStartingNode="false" />
+  
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div id="baoquanh">
+           <div id="header">
+              <table><tr>
+             <td class="auto-style3"> <h1 style="width: 650px">Clickbuy-Chọn là mua</h1></td>
+              <td><asp:Literal ID="ltradmin" runat="server"></asp:Literal></td>
+              <td><asp:Button ID="btndangxuat" Text="Đăng xuất" runat="server" OnClick="btndangxuat_Click"></asp:Button> </td>
+            <td><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Trangchu.aspx">Trang chủ</asp:HyperLink></td></tr>
+                   </table> 
+           </div>
+           <div id="menu">
+           </div>
+           <div id="left">
+               <table>
+               <tr><td><asp:Label ID="Label1" runat="server" BackColor="Black" Height="30px" Text="Quản lý" Width="250px" CssClass="lb" ForeColor="White"></asp:Label></td></tr>
+               <tr><td><asp:HyperLink ID="HyperLink1" BackColor="#FFD800" Height="30px" Width="250px" runat="server" Text="Quản lý tải khoản" NavigateUrl="~/quanlytaikhoan.aspx"></asp:HyperLink></td></tr>
+               <tr><td><asp:HyperLink ID="HyperLink2" BackColor="#FFD800" Height="30px" Width="250px" runat="server" Text="Quản lý sản phẩm" NavigateUrl="~/quanlysanpham.aspx"></asp:HyperLink></td></tr>
+               <tr><td><asp:HyperLink ID="HyperLink8" BackColor="#FFD800" Height="30px" Width="250px" runat="server" Text="Quản lý loại hàng" NavigateUrl="~/quanlyloaihang.aspx"></asp:HyperLink></td></tr>
+                    <tr><td><asp:HyperLink ID="HyperLink3" BackColor="#FFD800" Height="30px" Width="250px" runat="server" Text="Quản lý Hãng" NavigateUrl="~/quanlyhang.aspx"></asp:HyperLink></td></tr>
+                    <tr><td> <asp:HyperLink ID="HyperLink4" BackColor="#FFD800" Height="30px" Width="250px" runat="server" Text="Quản lý đơn hàng" NavigateUrl="~/quanlydonhang.aspx"></asp:HyperLink></td></tr>
+               <tr><td><asp:HyperLink ID="HyperLink5" BackColor="#FFD800" Height="30px" Width="250px" runat="server" Text="Quản lý tin tức" NavigateUrl="~/quanlytintuc.aspx"></asp:HyperLink></td></tr>
+               
+               </table>
+             
+           </div>
+            <div id="noidung">
+        
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+      
+        </div>
+               <div id="right"></div>
+               <div id="footer">
+                   <div id="fl"><p id="p">KHU VỰC MIÊN BẮC:<br>111 Trần Đăng Ninh-Cầu Giấy-Hà Nội: 0976.73.2468<br /></p></div>
+                   <div id="fc"> <p id="p1">TRUNG TÂM BẢO HÀNH:<br>Tầng 2-111 Trần Đăng Ninh-Cầu Giấy-Hà Nội</p></div>
+                   <div id="fr"><p id="p2">THÔNG TIN LIÊN HỆ<br />Hotline:096.606.2468<br />Đặt lịch hỗ trợ-bảo hành-đổi trả</p></div>
+               </div>
+     </div>
+    </form>
+</body>
+</html>
