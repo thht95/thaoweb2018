@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:Image ID="Image1" runat="server" ImageUrl="~/image/Untitled.png"  Width="740px" Height="300px"/>
-    <h3><asp:Label ID="lb1" runat="server" Text="TIN TỨC NỔI BẬT"></asp:Label></h3>
+    <h3><asp:Label ID="lb1" runat="server" Text="TIN TỨC NỔI BẬT 3"></asp:Label></h3>
     <table>
        <tr><td> <asp:DataList ID="dtl" runat="server" RepeatColumns="3" RepeatDirection="Horizontal">
                     <ItemTemplate>
