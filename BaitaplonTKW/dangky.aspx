@@ -15,7 +15,7 @@
         <td><asp:TextBox ID="txtPass" runat="server" TextMode="Password"></asp:TextBox></td>
     </tr>
     <tr><td>Nhập lại mật khẩu(*):</td>
-        <td><asp:TextBox ID="txtrePass" runat="server"></asp:TextBox></td>
+        <td><asp:TextBox ID="txtrePass" runat="server" TextMode="Password"></asp:TextBox></td>
     </tr>
             <tr><td>Email(*):</td>
         <td><asp:TextBox ID="txtemail" runat="server"></asp:TextBox></td>
