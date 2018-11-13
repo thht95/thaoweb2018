@@ -158,10 +158,12 @@ namespace BaitaplonTKW
             datareader.Read();
             string ten = datareader["tensanpham"].ToString();
             string tenhang = datareader["tenhang"].ToString();
-            int soluong = Convert.ToInt32(txtSoluong.Text);
+            int soluong = Convert.ToInt32(ddlsoluong.SelectedValue);
             double dongia = Convert.ToDouble(datareader["dongia"]);
             con.Close();
             themsanpham(ma, ten, soluong, dongia,tenhang);
+            var x = (Literal) this.Master.FindControl("ltrCart");
+            x.Text = "Đã thêm " + ten + " vào giỏ hàng";
         }
 
         protected void btnmuangay_Click(object sender, EventArgs e)

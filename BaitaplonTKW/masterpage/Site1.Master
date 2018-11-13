@@ -89,7 +89,7 @@
             #baoquanh #header #hl {
           background-color: #ffd800;
                 float:left;
-                height:70px;
+                height:100px;
                 width:70%;
               
             }
@@ -160,6 +160,9 @@
               <asp:HyperLink ID="giohang" Text="Xem giỏ hàng" NavigateUrl="~\Giohang.aspx" runat="server"></asp:HyperLink></td>
                              <td><asp:Button ID="btndangxuat" Text="Đăng xuất" runat="server" OnClick="btndangxuat_Click"></asp:Button> </td>
                              </tr>
+                            <tr>
+                                <td colspan="2"><asp:Literal runat="server" ID="ltrCart"></asp:Literal></td>
+                            </tr>
                       </asp:PlaceHolder>
 
                       <asp:PlaceHolder ID="pladmin" runat="server" Visible="false">
