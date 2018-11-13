@@ -12,7 +12,7 @@ namespace BaitaplonTKW
     public partial class Chitietsanpham : System.Web.UI.Page
     {
 
-        SqlConnection con = new SqlConnection(@"Data Source=ADMINISTRATOR;Initial Catalog=BTL;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=.;Initial Catalog=BTL;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -158,7 +158,7 @@ namespace BaitaplonTKW
             datareader.Read();
             string ten = datareader["tensanpham"].ToString();
             string tenhang = datareader["tenhang"].ToString();
-            int soluong = Convert.ToInt32(ddlsoluong.SelectedValue);
+            int soluong = Convert.ToInt32(txtSoluong.Text);
             double dongia = Convert.ToDouble(datareader["dongia"]);
             con.Close();
             themsanpham(ma, ten, soluong, dongia,tenhang);

@@ -18,7 +18,8 @@
                                        <asp:Label ID="tenhang" runat="server" Text='<%#Eval("tenhang") %>'></asp:Label><br />
                                         <asp:Label ID="dongia" runat="server" Text='<%#Eval("dongia") %>'></asp:Label><asp:Label ID="Label3" runat="server" Text="VND"></asp:Label><br />
                                         <asp:Label ID="trangthai" runat="server" Text='<%#Eval("trangthai") %>'></asp:Label><br />
-                                        <asp:DropDownList ID="ddlsoluong" runat="server" AutoPostBack="true"></asp:DropDownList>
+                                       <asp:TextBox runat="server" ID="txtSoluong"></asp:TextBox>
+                                        <asp:DropDownList ID="ddlsoluong" runat="server" AutoPostBack="true" Visible="false"></asp:DropDownList>
                              </td></tr>
                          <tr><td></td><td><asp:Button ID="btnthem" runat="server" Text="Thêm vào giỏ" OnClick="btnthem_Click"/></td>
                              <td><asp:Button ID="btnmuangay" runat="server" Text="Mua ngay" OnClick="btnmuangay_Click"/>
